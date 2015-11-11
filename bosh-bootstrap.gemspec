@@ -24,8 +24,8 @@ EOS
 
   gem.add_dependency "bosh_cli_plugin_micro"
   gem.add_dependency "cyoi", "~> 0.11.3"
-  gem.add_dependency "fog", "~> 1.34.0"
-  gem.add_dependency "fog-aws", "0.1.1"
+  gem.add_dependency "fog", "1.34.0"
+  gem.add_dependency "fog-aws", "0.7.6"
   gem.add_dependency "readwritesettings", "~> 3.0"
   gem.add_dependency "thor", "~> 0.18"
   gem.add_dependency "httpclient", '=2.4.0'
