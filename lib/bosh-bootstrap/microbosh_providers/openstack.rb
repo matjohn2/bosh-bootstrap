@@ -138,7 +138,7 @@ module Bosh::Bootstrap::MicroboshProviders
     def latest_stemcell
       @latest_stemcell ||= begin
         trusty_stemcells = recent_stemcells.select do |s|
-          s.name =~ /openstack/ && s.name =~ /trusty/
+          s.name =~ /openstack/ && s.name =~ /trusty/ && s.name =~ /raw/
         end
         trusty_stemcells.sort {|s1, s2| s2.version <=> s1.version}.first
       end
